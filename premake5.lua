@@ -9,7 +9,7 @@ project "OBS-NoPreventSleep"
     includedirs { "../obs-studio/libobs"}
     language "C++"
     targetdir "bin"
-    targetname "enable_sleep"
+    targetname "obs-nopreventsleep"
     files { "**.h", "**.cpp" }
     optimize "On"
     characterset "MBCS"
