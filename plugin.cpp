@@ -58,6 +58,7 @@ LRESULT CALLBACK window_proc(HWND hwnd, UINT uMsg, WPARAM wParam, LPARAM lParam)
         if (wParam == PBT_APMRESUMEAUTOMATIC) {
             //Is this thread safe? Who knows lol
             if (replay_active_on_suspend)
+                Sleep(10000);
                 start_replay();
 
         } else if (wParam == PBT_APMSUSPEND) {
